@@ -11,9 +11,8 @@ Official repo for Vera Android SDK.
 To integrate VeraSDK into your android project using gradle, build.gradle of app module:
 
 ```groovy
-implementation ('com.github.ilubbad:vera-android-sdk:${latest_version}') {
-    exclude group: 'com.android.support'
-}
+ implementation 'com.github.resonai:vera-android-sdk:0.0.1'
+ 
 repositories {
     maven {
         url "https://oss.sonatype.org/content/repositories/snapshots"
