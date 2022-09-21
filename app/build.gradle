@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.app.vera"
@@ -41,8 +41,7 @@ android {
 }
 
 dependencies {
-
-    implementation 'com.github.resonai:vera-android-sdk:0.0.1'
+    implementation 'com.github.resonai:vera-android-sdk:0.0.2'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'

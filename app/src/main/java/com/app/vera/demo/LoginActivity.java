@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.vera.R;
-import com.resonai.VeraConfiguration;
+import com.resonai.irocket.VeraConfiguration;
 import com.resonai.common.helpers.Languages;
 
 
