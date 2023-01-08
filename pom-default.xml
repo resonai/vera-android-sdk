@@ -8,16 +8,52 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.resonai.vera</groupId>
-  <artifactId>core</artifactId>
+  <artifactId>vera</artifactId>
   <version>0.0.1</version>
   <packaging>aar</packaging>
   <name>Vera Sdk</name>
   <description>Official repo for Vera Android SDK</description>
   <dependencies>
     <dependency>
+      <groupId>androidx.databinding</groupId>
+      <artifactId>viewbinding</artifactId>
+      <version>4.0.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup</groupId>
+      <artifactId>kotlinpoet</artifactId>
+      <version>1.12.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+      <version>1.6.4</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-android</artifactId>
+      <version>1.6.4</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.ar</groupId>
       <artifactId>core</artifactId>
-      <version>1.25.0</version>
+      <version>1.22.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>android.arch.lifecycle</groupId>
+      <artifactId>extensions</artifactId>
+      <version>1.1.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>android.arch.lifecycle</groupId>
+      <artifactId>viewmodel</artifactId>
+      <version>1.1.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -29,7 +65,7 @@
     <dependency>
       <groupId>androidx.appcompat</groupId>
       <artifactId>appcompat</artifactId>
-      <version>1.1.0</version>
+      <version>1.5.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -53,31 +89,31 @@
     <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services-auth</artifactId>
-      <version>17.0.0</version>
+      <version>20.2.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-core</artifactId>
-      <version>1.32.2</version>
+      <version>1.46.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-okhttp</artifactId>
-      <version>1.32.2</version>
+      <version>1.46.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-stub</artifactId>
-      <version>1.32.2</version>
+      <version>1.45.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-protobuf-lite</artifactId>
-      <version>1.32.2</version>
+      <version>1.46.0</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -99,21 +135,39 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.pytorch</groupId>
-      <artifactId>pytorch_android</artifactId>
-      <version>1.6.0-SNAPSHOT</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.pytorch</groupId>
-      <artifactId>pytorch_android_torchvision</artifactId>
-      <version>1.6.0-SNAPSHOT</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services-location</artifactId>
       <version>18.0.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.firebase</groupId>
+      <artifactId>firebase-crashlytics</artifactId>
+      <version>18.3.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.firebase</groupId>
+      <artifactId>firebase-analytics</artifactId>
+      <version>21.2.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.fragment</groupId>
+      <artifactId>fragment</artifactId>
+      <version>1.5.4</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core-ktx</artifactId>
+      <version>+</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib-jdk8</artifactId>
+      <version>1.7.20</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
