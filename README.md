@@ -3,7 +3,7 @@
 Official repo for Vera Android SDK.
 
 ## Installation
-- latest_version = 0.0.37
+- latest_version = 0.0.44
 - minSdkVersion = 28
 
 ### Gradle
@@ -19,7 +19,7 @@ repositories {
 
 Add the dependency to your module
 ```java
-    implementation 'com.github.resonai:vera-android-sdk:0.0.37'
+    implementation 'com.github.resonai:vera-android-sdk:0.0.44'
 ```
 
 Then, sync project:
