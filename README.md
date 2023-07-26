@@ -68,7 +68,7 @@ veraBuilder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.res
 
 ## Manifest:
 
-#Permissions:
+#### Permissions:
 
 ```xml
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

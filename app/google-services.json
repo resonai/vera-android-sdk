@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "337166531897",
+    "project_id": "verademo-5e9ed",
+    "storage_bucket": "verademo-5e9ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337166531897:android:e6ecb64e8bb3d5ad7a3ce8",
+        "android_client_info": {
+          "package_name": "com.app.vera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337166531897-jm87mvidbkqo1iehg8ln6f32l95o804v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.vera",
+            "certificate_hash": "a4e3ecba2d3c1ed01cc5eb8f991e507e657f5b8b"
+          }
+        },
+        {
+          "client_id": "337166531897-gj6bq9jo7iu5jnjji4vik3hr17imfi25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0luuEJeXf_a30m-FpqnO8kUyqVImk5QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337166531897-gj6bq9jo7iu5jnjji4vik3hr17imfi25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
