@@ -49,9 +49,9 @@ VeraConfiguration.Builder veraBuilder = new VeraConfiguration.Builder
 ```
 
 2.  Start sdk
-   -  Start Vera with user data:
+   -  Start Vera with user data:</br>
      `veraBuilder.startWithLogin(userName(), userId, token);`
-   - Start Vera without user data, i.e. anonymously:
+   - Start Vera without user data, i.e. anonymously:</br>
     `veraBuilder.startWithoutLogin();`
     
 ## Bi-directional Communication
