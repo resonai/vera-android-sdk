@@ -1,3 +1,4 @@
+
 <p align="center">
     <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="https://github.com/resonai/vera-ios-sdk/raw/readme/Vera.png">
 </p>
@@ -26,7 +27,7 @@ repositories {
 
 Add the dependency to your module
 ```java
-    implementation 'com.github.resonai:vera-android-sdk:$latest_version'
+implementation 'com.github.resonai:vera-android-sdk:$latest_version'
 ```
 
 ## Usage
@@ -47,16 +48,12 @@ VeraConfiguration.Builder veraBuilder = new VeraConfiguration.Builder
         .onCloseListener(this::closeVeraSdk) // Listener triggered when Vera closed
 ```
 
-2. Start sdk
-    1.  Start Vera with user data :
-```java
-     veraBuilder.startWithLogin(userName(), userId, token);
-```
-    2. Start Vera without user data, i.e. anonymously:
-```java
-     veraBuilder.startWithoutLogin();
-```
-
+2.  Start sdk
+   -  Start Vera with user data:
+     `veraBuilder.startWithLogin(userName(), userId, token);`
+   - Start Vera without user data, i.e. anonymously:
+    `veraBuilder.startWithoutLogin();`
+    
 ## Bi-directional Communication
 The SDK implements bi-directional communication between the Vera platform and the client application.
 
@@ -66,7 +63,7 @@ When you need to send Vera data after Vera already running you can use 'setDeepl
 for example:
 
 ```java
-    veraBuilder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId")
+veraBuilder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId")
 ```
 
 ## Manifest:
