@@ -1,14 +1,21 @@
-# Vera Android SDK 
+<p align="center">
+    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="https://github.com/resonai/vera-ios-sdk/raw/readme/Vera.png">
+</p>
+<p align="center">
+A computer vision enterprise platform that transforms buildings into intelligent environments.
+</p>
 
-Official repo for Vera Android SDK.
+<p align="center">
+    <a href="https://kotlinlang.org/"><img alt="Kotlin 1.8.10" src="https://img.shields.io/badge/kotlin-1.8.10-8A2BE2.svg?style=flat"></a>
+    <a href="https://github.com/resonai/vera-android-sdk/releases"><img alt="Vera Release" src="https://img.shields.io/github/v/release/resonai/vera-android-sdk"></a>
+</p>
 
 ## Installation
-- latest_version = 0.0.44
+- latest_version = 0.1.22
 - minSdkVersion = 28
 
-### Gradle
-
-To integrate VeraSDK into your android project using gradle: 
+### Gradle configuration
+To integrate VeraSDK into your android project using gradle:
 on your root build.gradle:
 
 ```java
@@ -19,13 +26,11 @@ repositories {
 
 Add the dependency to your module
 ```java
-    implementation 'com.github.resonai:vera-android-sdk:0.0.44'
+    implementation 'com.github.resonai:vera-android-sdk:$latest_version'
 ```
 
-Then, sync project:
-
-## Usage 
-  Create a configuration object and start sdk for both case
+## Usage
+1. Create a configuration object
 
 ```java
 VeraConfiguration.Builder veraBuilder = new VeraConfiguration.Builder
@@ -37,35 +42,36 @@ VeraConfiguration.Builder veraBuilder = new VeraConfiguration.Builder
         .setHideHeader(false) // A boolean value for the SDK to hide or show the default header. Defaults to `false`
         .setDeeplinkPrefix(veraDomain) //A string value defining your custom "deepLinkPrefix". Used when generating deep links that you can pass into Vera and should open your app.
         .setLanguage(sdkLanguage) // Choose Vera language. Defaults to `en` (English)
-        
         .onRequestRefreshToken(this::fetchUserToken) // Listener triggered when user token need refresh
         .onMessageListener(this::onMessage) // Listener to messages from Vera and implement logic for them
         .onCloseListener(this::closeVeraSdk) // Listener triggered when Vera closed
 ```
 
-You can start Vera with user data :
-
+2. Start sdk
+   2.1. Start Vera with user data :
 ```java
-
-     builder.startWithLogin(useName(), userId, token);
+     veraBuilder.startWithLogin(userName(), userId, token);
 ```
 
-You can also start Vera without user data, i.e. anonymously:
-
+2.2. Start Vera without user data, i.e. anonymously:
 ```java
-
-     builder.startWithoutLogin();
+     veraBuilder.startWithoutLogin();
 ```
+## Bi-directional Communication
+The SDK implements bi-directional communication between the Vera platform and the client application.
+
+#### Deeplinks
+The SDK supports deep link-ing to some AR Experiences.
 When you need to send Vera data after Vera already running you can use 'setDeeplinkComponent':
 for example:
 
 ```java
-    builder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId")
+    veraBuilder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId")
 ```
 
-## Manifest: 
+## Manifest:
 
-#Permissions: 
+#Permissions:
 
 ```xml
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
