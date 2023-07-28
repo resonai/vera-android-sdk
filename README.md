@@ -36,8 +36,6 @@ implementation 'com.github.resonai:vera-android-sdk:$latest_version'
 
 1. Create a configuration object
 
-- Possibility to show Vera SDK
-
 - Show it like a new Activity
 
 ```kotlin
