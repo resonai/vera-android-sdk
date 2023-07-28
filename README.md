@@ -38,13 +38,13 @@ implementation 'com.github.resonai:vera-android-sdk:$latest_version'
 
 - Possibility to show Vera SDK
 
-1.1 Show it like a new Activity
+- Show it like a new Activity
 
 ```kotlin
 val veraBuilder = VeraConfiguration.Builder(requireActivity())
 ```
 
-1.2 Show it in fragment
+- Show it in fragment
 
 ```kotlin
 val veraBuilder = VeraConfiguration.Builder(
@@ -116,11 +116,12 @@ send and receive events from the SDK.
 #### Permissions:
 
 ```xml
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.VIBRATE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><uses-permission
+android:name="android.permission.CAMERA" /><uses-permission
+android:name="android.permission.INTERNET" /><uses-permission
+android:name="android.permission.VIBRATE" /><uses-permission
+android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
 ```
 
 * "App needs access to the camera in order to render AR."
