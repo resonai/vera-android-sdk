@@ -39,7 +39,7 @@ implementation 'com.github.resonai:vera-android-sdk:$latest_version'
 ```
 
 ## Usage
-You can check [example integration](https://github.com/resonai/vera-android-sdk/blob/97a715517ca69fb06adc7cfd90c90169d7bcaeca/app/src/main/java/com/app/vera/demo/LoginActivity.kt#L65)
+You can check [example integration](https://github.com/resonai/vera-android-sdk/blob/97a715517ca69fb06adc7cfd90c90169d7bcaeca/app/src/main/java/com/app/vera/demo/LoginActivity.kt#L65).
 
 1. Create a configuration object, either as a new Activity or in a Fragment
 
@@ -118,7 +118,7 @@ veraBuilder.startWithoutLogin()
 Check the [bi-directional communication docs](./docs/bidirectional-communication.md) to learn how to
 send and receive events from the SDK.
 
-## Manifest:
+## Manifest
 
 #### Permissions:
 
