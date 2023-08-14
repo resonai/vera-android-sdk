@@ -11,6 +11,9 @@ import com.resonai.common.helpers.Languages
 import com.resonai.irocket.VeraConfiguration
 import com.resonai.irocket.VeraEvents
 
+/*
+* This demo app represents an example of how we can simply configure VeraConfiguration.Builder.
+ */
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -18,6 +21,9 @@ class LoginActivity : AppCompatActivity() {
     private var permissions =
         arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
 
+    /**
+     * This system callback method called when the activity is starting.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -25,12 +31,18 @@ class LoginActivity : AppCompatActivity() {
         bindView()
     }
 
+    /**
+     * This method bind all views
+     */
     private fun bindView() = with(binding) {
         btnStart.setOnClickListener {
             checkPermissions()
         }
     }
 
+    /**
+     * This method check if all permission was granted, if not method asking to be give.
+     */
     private fun checkPermissions() {
         var allPermissions = true
         for (per in permissions) {
@@ -45,6 +57,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * This method represent a callback from #requestPermissions, when all permission was granted.
+     */
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<String>, grantResults: IntArray
     ) {
@@ -59,6 +74,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * This method represent configuration and opening Vera SDK.
+     */
     private fun openVeraScreen() {
         binding.btnStart.isVisible = false
         binding.container.isVisible = true
@@ -83,16 +101,36 @@ class LoginActivity : AppCompatActivity() {
                 }
             })
 
-        setVeraDeeplink()
+        setVeraDeeplink(isDeeplinkEnabled = false)
+        setVeraMessage(isMessageEnabled = false)
         veraBuilder?.startWithoutLogin()
     }
 
-    private fun setVeraDeeplink() {
-        val deeplinkPath =
-            "https://vera.resonai.com/#/play/azrieli-hashalom-tlv/com.resonai.navigation/%7B%22id%22%3A%22660%22%7D"
-        val isDeeplinkEnabled = false
+    /**
+     * This method represent a opening deeplink in Resonai place.
+     * Put "true" in arguments to enable deeplink.
+     */
+    private fun setVeraDeeplink(isDeeplinkEnabled: Boolean) {
         if (isDeeplinkEnabled) {
+            //Deeplink path of Resonai place
+            val deeplinkPath =
+                "https://vera.resonai.com/#/play/hataasia-9-2/com.resonai.navigation/%7B%22key%22%3A%228ef9f85c-0e1c-11ec-a530-c2d81cac16c6%22%7D"
             veraBuilder?.setDeeplinkComponent(deeplinkPath)
+        }
+    }
+
+    /**
+     * This method represent sending custom ARXs events.
+     * Put "true" in arguments to pass ARX messages.
+     */
+    private fun setVeraMessage(isMessageEnabled: Boolean) {
+        if (isMessageEnabled) {
+            //Pass name of ARX event
+            val msgReceiver = "custom_arx_name"
+
+            //Pass data which you want to set
+            val msgData = "custom_data"
+            veraBuilder?.setMessage(msgReceiver, msgData)
         }
     }
 
