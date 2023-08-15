@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.app.vera">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-
 
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:icon,theme"
-   >
+        android:theme="@style/Theme.Player"
+        tools:replace="android:icon,theme">
+
         <activity
             android:name=".demo.LoginActivity"
             android:exported="true">
-            <tools:validation testUrl="https://vera.resonai.com/#/play/default/arme/data"
+
+            <tools:validation
+                testUrl="https://vera.resonai.com/#/play/default/arme/data"
                 tools:ignore="TestAppLink" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -39,7 +41,9 @@
                 <data android:scheme="https" />
                 <data android:host="vera.resonai.com" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
