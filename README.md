@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="https://github.com/resonai/vera-ios-sdk/raw/readme/Vera.png">
+    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="./Vera.png">
 </p>
 <p align="center">
 A computer vision enterprise platform that transforms buildings into intelligent environments.
