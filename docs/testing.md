@@ -16,7 +16,7 @@ that site ID. Otherwise you can use our sample site.
 ```kotlin
 VeraConfiguration.Builder(activity)
     .setClientAppID("app_client_id")
-    .setSiteIDs(listOf("hataasiya-9-2"))  // or your specific site ID
+    .setSiteIDs(listOf("sdk-sample-site"))  // or your specific site ID
 ```
 
 ## Registration

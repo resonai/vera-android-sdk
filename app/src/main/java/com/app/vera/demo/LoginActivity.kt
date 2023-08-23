@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
             .setClientAppID("vera_client_app")
             .setLanguage(Languages.EN)
             .setHideHeader(true)
-            .setSiteIDs(listOf("hataasiya-9-2"))
+            .setSiteIDs(listOf("sdk-sample-site"))
             .onMessageListener(object : VeraEvents.VeraOnMessageListener {
                 override fun onMessage(sender: String?, data: String?) {
                     showToast("Vera is sending event message back, sender:$sender, msg:$data")
