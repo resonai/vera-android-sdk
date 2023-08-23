@@ -16,7 +16,7 @@ that site ID. Otherwise you can use our sample site.
 ```kotlin
 VeraConfiguration.Builder(activity)
     .setClientAppID("app_client_id")
-    .setSiteIDs(listOf("hataasiya-9-2"))  // or your specific site ID
+    .setSiteIDs(listOf("sdk-sample-site"))  // or your specific site ID
 ```
 
 ## Registration
@@ -38,7 +38,9 @@ Otherwise you should trick Vera into thinking it is there. To do that, you can u
 image taken at that site. Below is an image you can use to test our sample site. Open the image
 full-screen on your monitor and point your phone to the image.
 
-![Sample Registration](./registration.png)
+![Sample Registration_1](./registration_1.png)
+![Sample Registration_2](./registration_2.png)
+![Sample Registration_3](./registration_3.png)
 
 As soon as you get registration, you should see 3D objects around you.
 
