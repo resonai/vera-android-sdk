@@ -114,7 +114,7 @@ class LoginActivity : AppCompatActivity() {
         if (isDeeplinkEnabled) {
             //Deeplink path of Resonai place
             val deeplinkPath =
-                "https://vera.resonai.com/#/play/hataasia-9-2/com.resonai.navigation/%7B%22key%22%3A%228ef9f85c-0e1c-11ec-a530-c2d81cac16c6%22%7D"
+                "https://vera.resonai.com/#/play/sdk-sample-site/com.resonai.navigation/%7B%22key%22%3A%228207e1fe-3c5a-11ee-9750-12f3c6ba63d8%22%7D"
             veraBuilder?.setDeeplinkComponent(deeplinkPath)
         }
     }
