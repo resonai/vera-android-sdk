@@ -153,18 +153,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.firebase</groupId>
-      <artifactId>firebase-crashlytics</artifactId>
-      <version>18.3.3</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.firebase</groupId>
-      <artifactId>firebase-analytics</artifactId>
-      <version>21.2.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.fragment</groupId>
       <artifactId>fragment</artifactId>
       <version>1.5.5</version>
@@ -210,6 +198,18 @@
       <groupId>com.scandit.datacapture</groupId>
       <artifactId>barcode</artifactId>
       <version>6.17.0-beta.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>play-services-mlkit-text-recognition</artifactId>
+      <version>19.0.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.kirich1409</groupId>
+      <artifactId>viewbindingpropertydelegate-full</artifactId>
+      <version>1.5.9</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
