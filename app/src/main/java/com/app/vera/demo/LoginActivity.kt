@@ -80,7 +80,11 @@ class LoginActivity : AppCompatActivity() {
     private fun openVeraScreen() {
         binding.btnStart.isVisible = false
         binding.container.isVisible = true
-        veraBuilder = VeraConfiguration.Builder(supportFragmentManager, binding.container)
+        veraBuilder = VeraConfiguration.Builder(
+            fragmentManager = supportFragmentManager,
+            container = binding.container,
+            applicationContext = this
+        )
             .setClientAppID("vera_client_app")
             .setLanguage(Languages.EN)
             .setHideHeader(true)

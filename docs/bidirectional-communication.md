@@ -50,6 +50,18 @@ veraBuilder.onCloseListener(object : VeraEvents.VeraCloseListener {
 })
 ```
 
+#### onDetachFragment Listener
+
+Get event when Vera fragment was detach.
+
+```kotlin
+veraBuilder.onDetachFragmentListener(object: VeraEvents.VeraDetachListener{
+    override fun onDetachFragment() {
+        showToast("Vera fragment was detach")
+    }
+})
+```
+
 ## Communicating to ARXs
 
 Since Vera is the platform where multiple Native apps can use different ARXs on the same site, we
