@@ -15,5 +15,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+jitpack.yml
+pom-default.xml
 /.idea/
 /.gradle/
