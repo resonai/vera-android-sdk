@@ -10,7 +10,16 @@ When you need to send Vera data after Vera already running you can use 'setDeepl
 for example:
 
 ```kotlin
-veraBuilder.setDeeplinkComponent("https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId")
+/**
+ * @param deeplinkComponent an deeplink path
+ * @param isOutSideDeeplink if deeplink will set in app, then pass `false`,
+ * if it will came from background, for example clicking on link and caught in `#onNewIntent()`
+ * then should be pass true.
+ */
+veraBuilder.setDeeplinkComponent(
+    deeplinkComponent = "https://vera.resonai.com/#/play/siteid/com.resonai.navigation/poseId",
+    isOutSideDeeplink = false
+)
 ```
 
 For an example

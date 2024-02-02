@@ -82,8 +82,7 @@ class LoginActivity : AppCompatActivity() {
         binding.container.isVisible = true
         veraBuilder = VeraConfiguration.Builder(
             fragmentManager = supportFragmentManager,
-            container = binding.container,
-            applicationContext = this
+            container = binding.container
         )
             .setClientAppID("vera_client_app")
             .setLanguage(Languages.EN)
@@ -119,7 +118,17 @@ class LoginActivity : AppCompatActivity() {
             //Deeplink path of Resonai place
             val deeplinkPath =
                 "https://vera.resonai.com/#/play/sdk-sample-site/com.resonai.navigation/%7B%22key%22%3A%228207e1fe-3c5a-11ee-9750-12f3c6ba63d8%22%7D"
-            veraBuilder?.setDeeplinkComponent(deeplinkPath)
+
+            /**
+             * @param deeplinkComponent an deeplink path
+             * @param isOutSideDeeplink if deeplink will set in app, then pass `false`,
+             * if it will came from background, for example clicking on link and catched in `onNewIntent`
+             * then should be pass true.
+             */
+            veraBuilder?.setDeeplinkComponent(
+                deeplinkComponent = deeplinkPath,
+                isOutSideDeeplink = false
+            )
         }
     }
 
