@@ -50,6 +50,18 @@ veraBuilder.onCloseListener(object : VeraEvents.VeraCloseListener {
 })
 ```
 
+#### onDetachFragment Listener
+
+Get event when Vera fragment was detach.
+
+```kotlin
+veraBuilder.onDetachFragmentListener(object: VeraEvents.VeraDetachListener{
+    override fun onDetachFragment() {
+        showToast("Vera fragment was detach")
+    }
+})
+```
+
 ## Communicating to ARXs
 
 Since Vera is the platform where multiple Native apps can use different ARXs on the same site, we
@@ -78,3 +90,5 @@ The same way you send events to ARXs, you can receive events from ARXs.
     }
 })
 ```
+
+To test that your implementation of receiving messages from ARXs is successful, you can use our sample site. After achieving registration, you should open the `Communications Demo` app via the Vera menu. Tap **Send Native Message**, and, if implemented correctly, you should receive a test event.  **_In the example above the app will display a toast_**.

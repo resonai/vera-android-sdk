@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="https://github.com/resonai/vera-ios-sdk/raw/readme/Vera.png">
+    <img alt="Vera: A computer vision enterprise platform that transforms buildings into intelligent environments" src="./Vera.png">
 </p>
 <p align="center">
 A computer vision enterprise platform that transforms buildings into intelligent environments.
@@ -12,7 +12,7 @@ A computer vision enterprise platform that transforms buildings into intelligent
 
 ## Installation
 
-- latest_version = 0.1.22
+- latest_version = 1.1.3
 - minSdkVersion = 28
 - arCore = true (check the [ARCore supported devices](https://developers.google.com/ar/devices))
 
@@ -54,7 +54,8 @@ val veraBuilder = VeraConfiguration.Builder(requireActivity())
 ```kotlin
 val veraBuilder = VeraConfiguration.Builder(
     fragmentManager = getSupportFragmentManager(),
-    container = R.id.container
+    container = R.id.container,
+    applicaticationContext = applicaticationContext
 )
 ```
 
