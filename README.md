@@ -67,7 +67,7 @@ veraBuilder.setClientAppID("vera_client_app")
 - Set Vera site ID's.
 
 ```kotlin
-veraBuilder.setSiteIDs("siteId1", "siteId2")
+veraBuilder.setSiteIDs("siteId1")
 ```
 
 - (Optional) Set a boolean value of whether the SDK should show its own close button. Default to '
