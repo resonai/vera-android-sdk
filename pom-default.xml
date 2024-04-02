@@ -59,7 +59,7 @@
     <dependency>
       <groupId>com.google.ar</groupId>
       <artifactId>core</artifactId>
-      <version>1.36.0</version>
+      <version>1.40.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
