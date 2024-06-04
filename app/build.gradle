@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 apply plugin: 'com.google.firebase.crashlytics'
+apply from: 'version.gradle'
 
 android {
     compileSdk 34
@@ -18,7 +19,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [crashlyticsCollectionEnabled:"false"]
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "false"]
         }
     }
 
@@ -53,13 +54,20 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.resonai:vera-android-sdk:1.2.0'
+    implementation "com.github.resonai:vera-android-sdk:${VERA_SDK_VERSION}"
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
     implementation 'androidx.core:core-ktx:1.12.0'
-    implementation "com.google.firebase:firebase-crashlytics:18.6.1"
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "androidx.fragment:fragment-ktx:1.7.1"
+
+    implementation "com.google.firebase:firebase-crashlytics-ktx:19.0.1"
+
+    def LIFECYCLE_VERSION = "2.8.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${LIFECYCLE_VERSION}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${LIFECYCLE_VERSION}"
+
+    implementation "androidx.viewpager2:viewpager2:1.1.0"
 }
