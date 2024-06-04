@@ -1,10 +1,10 @@
-package com.app.vera.demo.common
+package com.resonai.vera.demo.common
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
-import com.app.vera.demo.Action
-import com.app.vera.demo.VeraViewModel
+import com.resonai.vera.demo.Action
+import com.resonai.vera.demo.VeraViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 

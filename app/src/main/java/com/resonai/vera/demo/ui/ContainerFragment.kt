@@ -1,13 +1,13 @@
-package com.app.vera.demo.ui
+package com.resonai.vera.demo.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.vera.databinding.FragmentContainerBinding
-import com.app.vera.demo.adapter.PagerAdapter
-import com.app.vera.demo.common.BaseFragment
 import com.google.android.material.tabs.TabLayoutMediator
+import com.resonai.vera.demo.adapter.PagerAdapter
+import com.resonai.vera.demo.common.BaseFragment
 
 class ContainerFragment : BaseFragment() {
 

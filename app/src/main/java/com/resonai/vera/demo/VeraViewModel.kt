@@ -1,4 +1,4 @@
-package com.app.vera.demo
+package com.resonai.vera.demo
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

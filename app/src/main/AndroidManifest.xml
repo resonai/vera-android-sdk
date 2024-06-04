@@ -23,7 +23,7 @@
         tools:replace="android:icon,theme">
 
         <activity
-            android:name=".demo.LoginActivity"
+            android:name="com.resonai.vera.demo.LoginActivity"
             android:exported="true">
 
             <tools:validation

@@ -1,16 +1,16 @@
-package com.app.vera.demo.ui
+package com.resonai.vera.demo.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.vera.databinding.FragmentVeraContainerBinding
-import com.app.vera.demo.common.BaseFragment
-import com.app.vera.demo.ext.showToast
 import com.resonai.common.helpers.CallbackRequestToken
 import com.resonai.common.helpers.Languages
 import com.resonai.irocket.VeraConfiguration
 import com.resonai.irocket.VeraEvents
+import com.resonai.vera.demo.common.BaseFragment
+import com.resonai.vera.demo.ext.showToast
 
 class VeraContainerFragment : BaseFragment() {
 

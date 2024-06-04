@@ -1,42 +1,182 @@
 {
   "project_info": {
-    "project_number": "337166531897",
-    "project_id": "verademo-5e9ed",
-    "storage_bucket": "verademo-5e9ed.appspot.com"
+    "project_number": "345454492227",
+    "firebase_url": "https://yowza3d.firebaseio.com",
+    "project_id": "yowza3d",
+    "storage_bucket": "yowza3d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:337166531897:android:e6ecb64e8bb3d5ad7a3ce8",
+        "mobilesdk_app_id": "1:345454492227:android:29b2c93726ab097b",
         "android_client_info": {
-          "package_name": "com.app.vera"
+          "package_name": "com.google.ar.core.examples.java.cloudanchor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "337166531897-jm87mvidbkqo1iehg8ln6f32l95o804v.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.app.vera",
-            "certificate_hash": "a4e3ecba2d3c1ed01cc5eb8f991e507e657f5b8b"
-          }
-        },
-        {
-          "client_id": "337166531897-gj6bq9jo7iu5jnjji4vik3hr17imfi25.apps.googleusercontent.com",
+          "client_id": "345454492227-apfagu26u6q6u672kar64dt0dkpuemd8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD0luuEJeXf_a30m-FpqnO8kUyqVImk5QE"
+          "current_key": "AIzaSyAc0O15wljT6apAs98ZLWF37C1Tg4eArBE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "337166531897-gj6bq9jo7iu5jnjji4vik3hr17imfi25.apps.googleusercontent.com",
+              "client_id": "105601542330412844756",
               "client_type": 3
+            },
+            {
+              "client_id": "345454492227-1qrdimfifsg40dalg62d73qk68k2i0j7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "resonai.IPhoneXAVScan"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345454492227:android:61702a35bf50fc5bea32f6",
+        "android_client_info": {
+          "package_name": "com.resonai.irocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345454492227-bvi4r1gurn6nt0hmigjp87astmsdvt8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resonai.irocket",
+            "certificate_hash": "0ee070f38c361d7022f40a317328012107f1a3d6"
+          }
+        },
+        {
+          "client_id": "345454492227-nt5232krfkrt2kk30s7rgevrcpclhe1h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resonai.irocket",
+            "certificate_hash": "0f233914c649e974d72f9c460b2028a4af75ee8b"
+          }
+        },
+        {
+          "client_id": "345454492227-oqju1c2lb06t26cavlbdsbi8d8g5tor9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resonai.irocket",
+            "certificate_hash": "e34cf94ec0f6790a7cb6f66736043c03e638586c"
+          }
+        },
+        {
+          "client_id": "345454492227-apfagu26u6q6u672kar64dt0dkpuemd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc0O15wljT6apAs98ZLWF37C1Tg4eArBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105601542330412844756",
+              "client_type": 3
+            },
+            {
+              "client_id": "345454492227-1qrdimfifsg40dalg62d73qk68k2i0j7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "resonai.IPhoneXAVScan"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345454492227:android:5e1f30f5c1462c2fea32f6",
+        "android_client_info": {
+          "package_name": "com.resonai.vera.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345454492227-0blkukf59p1lp0mqfrtoc6h8vh06oer8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resonai.vera.demo",
+            "certificate_hash": "a4e3ecba2d3c1ed01cc5eb8f991e507e657f5b8b"
+          }
+        },
+        {
+          "client_id": "345454492227-apfagu26u6q6u672kar64dt0dkpuemd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc0O15wljT6apAs98ZLWF37C1Tg4eArBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105601542330412844756",
+              "client_type": 3
+            },
+            {
+              "client_id": "345454492227-1qrdimfifsg40dalg62d73qk68k2i0j7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "resonai.IPhoneXAVScan"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345454492227:android:7f1c0d3ab9fd45a4ea32f6",
+        "android_client_info": {
+          "package_name": "com.vera.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345454492227-apfagu26u6q6u672kar64dt0dkpuemd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc0O15wljT6apAs98ZLWF37C1Tg4eArBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105601542330412844756",
+              "client_type": 3
+            },
+            {
+              "client_id": "345454492227-1qrdimfifsg40dalg62d73qk68k2i0j7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "resonai.IPhoneXAVScan"
+              }
             }
           ]
         }

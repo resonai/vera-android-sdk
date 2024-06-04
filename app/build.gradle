@@ -7,7 +7,7 @@ apply from: 'version.gradle'
 android {
     compileSdk 34
     defaultConfig {
-        applicationId "com.app.vera"
+        applicationId "com.resonai.vera.demo"
         minSdk 28
         targetSdk 34
         versionCode 1

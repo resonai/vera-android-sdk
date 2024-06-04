@@ -1,4 +1,4 @@
-package com.app.vera.demo
+package com.resonai.vera.demo
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentManager
 import com.app.vera.databinding.ActivityLoginBinding
-import com.app.vera.demo.ext.showToast
-import com.app.vera.demo.ui.ContainerFragment
+import com.resonai.vera.demo.ext.showToast
+import com.resonai.vera.demo.ui.ContainerFragment
 
 class LoginActivity : AppCompatActivity() {
 
