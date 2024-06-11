@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.app.vera.databinding.FragmentFeaturesBinding
 import com.resonai.vera.demo.common.BaseFragment
+import com.resonai.vera.demo.databinding.FragmentFeaturesBinding
 
 class FeaturesFragment : BaseFragment() {
 

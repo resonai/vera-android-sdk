@@ -10,8 +10,8 @@ android {
         applicationId "com.resonai.vera.demo"
         minSdk 28
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -50,22 +50,23 @@ android {
         viewBinding true
     }
 
-    namespace 'com.app.vera'
+    namespace 'com.resonai.vera.demo'
 }
 
 dependencies {
-    implementation "com.github.resonai:vera-android-sdk:${VERA_SDK_VERSION}"
+    implementation "com.github.resonai:vera-android-sdk:${veraSdkVersion}" // for public use
+//    implementation "com.resonai.vera:vera:${veraSdkVersion}" // for local use
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.core:core-ktx:1.13.1'
     implementation "androidx.fragment:fragment-ktx:1.7.1"
 
     implementation "com.google.firebase:firebase-crashlytics-ktx:19.0.1"
 
-    def LIFECYCLE_VERSION = "2.8.0"
+    def LIFECYCLE_VERSION = "2.8.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:${LIFECYCLE_VERSION}"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${LIFECYCLE_VERSION}"
 

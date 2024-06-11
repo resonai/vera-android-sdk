@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentManager
-import com.app.vera.databinding.ActivityLoginBinding
+import com.resonai.vera.demo.databinding.ActivityLoginBinding
 import com.resonai.vera.demo.ext.showToast
 import com.resonai.vera.demo.ui.ContainerFragment
 
