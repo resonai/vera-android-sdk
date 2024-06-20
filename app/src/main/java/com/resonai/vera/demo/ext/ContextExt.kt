@@ -1,4 +1,4 @@
-package com.app.vera.demo
+package com.resonai.vera.demo.ext
 
 import android.content.Context
 import android.widget.Toast
