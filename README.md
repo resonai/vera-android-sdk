@@ -12,7 +12,7 @@ A computer vision enterprise platform that transforms buildings into intelligent
 
 ## Installation
 
-- latest_version = 1.2.0
+- latest_version = 1.2.7
 - minSdkVersion = 28
 - arCore = true (check the [ARCore supported devices](https://developers.google.com/ar/devices))
 
@@ -112,6 +112,32 @@ veraBuilder.startWithoutLogin()
 ```
 
 3. Please refer to the [testing docs](./docs/testing.md) to learn how to test if the integration was successful.
+
+## Closing the SDK
+
+To close the Vera SDK and return to your application, you can follow these steps:
+
+1. If you have started the SDK in a new Activity, simply call `finish()` from within that Activity to close it and return to the previous Activity in your app's stack.
+
+2. If you have embedded the SDK within a Fragment, you can remove the Fragment from your `FragmentManager`. 
+
+Here's a sample code snippet to do so:
+```kotlin
+val fragment = supportFragmentManager.findFragmentById(R.id.container)
+if (fragment != null) {
+  supportFragmentManager.beginTransaction().remove(fragment).commit()
+}
+```
+
+#### Verifying SDK Closure in Chrome
+
+To ensure that the Vera SDK's web view is properly closed, you can use Chrome's inspect tool to check for active web views. Follow these steps:
+
+1. Open Chrome and navigate to `chrome://inspect/#devices`.
+2. Ensure your device is connected to your computer and USB debugging is enabled.
+3. Under the "Remote Target" section, look for your application's web view. If the SDK is closed properly, you should not see any entry for the Vera SDK's web view.
+
+This method provides a straightforward way to visually confirm that the SDK's web view has been fully terminated.
 
 ## Bi-directional Communication
 
