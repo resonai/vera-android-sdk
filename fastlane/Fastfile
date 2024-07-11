@@ -7,7 +7,7 @@ platform :android do
   end
 
    desc "Submit a new Beta Build to Firebase App Distribution"
-  lane :distribute do
+  lane :beta do
     gradle(task: "clean assembleRelease")
     gradle(
       task: 'assemble',
@@ -16,6 +16,7 @@ platform :android do
   
     firebase_app_distribution(
       app: "1:345454492227:android:5e1f30f5c1462c2fea32f6",
+      groups: "qa",
       testers: "leon@resonaixr.com"
     )
   end
