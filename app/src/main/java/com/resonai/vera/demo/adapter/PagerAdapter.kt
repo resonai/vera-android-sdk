@@ -3,7 +3,7 @@ package com.resonai.vera.demo.adapter
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.resonai.vera.demo.ui.VeraContainerFragment
-import com.resonai.vera.demo.ui.FeaturesFragment
+import com.resonai.vera.demo.ui.features.FeaturesFragment
 
 class PagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
