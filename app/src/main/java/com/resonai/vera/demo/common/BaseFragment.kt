@@ -16,11 +16,15 @@ open class BaseFragment : Fragment() {
     private var actionJob: Job? = null
     val viewModel: VeraViewModel by activityViewModels()
 
-    fun subscribeObservables(onSendMessage: (String, Boolean) -> Unit) {
+    fun subscribeObservables(onSendMessage: (String, String, Boolean) -> Unit) {
         actionJob = lifecycleScope.launch {
             viewModel.action.collect { action ->
                 when (action) {
-                    is Action.SendMessage -> onSendMessage.invoke(action.msg, action.shouldRestart)
+                    is Action.SendMessage -> onSendMessage.invoke(
+                        action.msg,
+                        action.siteId,
+                        action.shouldRestart
+                    )
                 }
             }
         }

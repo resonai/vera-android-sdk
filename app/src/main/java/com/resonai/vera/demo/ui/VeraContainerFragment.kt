@@ -16,7 +16,6 @@ class VeraContainerFragment : BaseFragment() {
 
     private companion object {
         const val CLIENT_APP_ID = "vera_client_app"
-        const val SDK_SAMPLE_SITE = "sdk-sample-site"
     }
 
     private var binding: FragmentVeraContainerBinding? = null
@@ -35,7 +34,8 @@ class VeraContainerFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         setupVera()
 
-        subscribeObservables(onSendMessage = { deepLinkUrl, shouldRestart ->
+        subscribeObservables(onSendMessage = { deepLinkUrl, siteId, shouldRestart ->
+            veraBuilder?.setSiteIDs(listOf(siteId))
             if (shouldRestart) {
                 veraBuilder?.startWithoutLogin()
             }
@@ -52,7 +52,6 @@ class VeraContainerFragment : BaseFragment() {
             .setClientAppID(CLIENT_APP_ID)
             .setLanguage(Languages.EN)
             .setHideHeader(true)
-            .setSiteIDs(listOf(SDK_SAMPLE_SITE))
             .onMessageListener(object : VeraEvents.VeraOnMessageListener {
                 override fun onMessage(sender: String?, data: String?) {
                     context?.showToast("Vera is sending event message back, sender:$sender, msg:$data")

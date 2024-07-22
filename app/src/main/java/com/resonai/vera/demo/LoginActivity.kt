@@ -86,14 +86,13 @@ class LoginActivity : AppCompatActivity() {
     override fun onBackPressed() {
         binding.btnStart.isVisible = true
         binding.container.isVisible = false
-        if (supportFragmentManager.backStackEntryCount > 1) {
+        if (supportFragmentManager.backStackEntryCount >= 1) {
             supportFragmentManager.popBackStack(
                 ContainerFragment::class.java.getSimpleName(),
                 FragmentManager.POP_BACK_STACK_INCLUSIVE
             )
         } else super.onBackPressed()
     }
-
 
     companion object {
         private const val MY_REQUEST_CODE = 100

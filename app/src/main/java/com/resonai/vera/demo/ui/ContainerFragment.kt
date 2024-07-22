@@ -25,7 +25,7 @@ class ContainerFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        subscribeObservables(onSendMessage = { deepLinkUrl, shouldRestart ->
+        subscribeObservables(onSendMessage = { msg, siteId, shouldRestart ->
             binding?.viewPager?.setCurrentItem(0, true)
         })
 
