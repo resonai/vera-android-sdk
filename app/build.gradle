@@ -15,11 +15,21 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        config {
+            keyAlias 'vera-demo'
+            keyPassword 'resonai'
+            storeFile file('../certificates/vera-demo.keystore')
+            storePassword 'resonai'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [crashlyticsCollectionEnabled: "false"]
+            signingConfig signingConfigs.config
         }
     }
 
@@ -54,8 +64,8 @@ android {
 }
 
 dependencies {
-    implementation "com.github.resonai:vera-android-sdk:${veraSdkVersion}" // for public use
-//    implementation "com.resonai.vera:vera:${veraSdkVersion}" // for local use
+//    implementation "com.github.resonai:vera-android-sdk:${veraSdkVersion}" // for public use
+    implementation "com.resonai.vera:vera:${veraSdkVersion}" // for local use
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'

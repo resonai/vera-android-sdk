@@ -19,3 +19,5 @@ jitpack.yml
 pom-default.xml
 /.idea/
 /.gradle/
+/app/release/output-metadata.json
+/app/release/app-release.apk

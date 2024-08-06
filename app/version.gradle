@@ -1,5 +1,5 @@
 ext {
-    veraSdkVersion = '1.2.7'
+    veraSdkVersion = '1.2.8'
     versionName = '1.0.0'
     versionCode = 1
 }

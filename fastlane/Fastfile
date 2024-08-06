@@ -1,0 +1,23 @@
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+   desc "Submit a new Beta Build to Firebase App Distribution"
+  lane :beta do
+    gradle(task: "clean assembleRelease")
+    gradle(
+      task: 'assemble',
+      build_type: 'Release'
+    )
+  
+    firebase_app_distribution(
+      app: "1:345454492227:android:5e1f30f5c1462c2fea32f6",
+      groups: "qa",
+      testers: "leon@resonaixr.com"
+    )
+  end
+end
